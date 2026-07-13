@@ -8,10 +8,10 @@ A beginner-friendly, step-by-step guide to connect your GitHub repository with J
 
 Once connected, you'll be able to:
 
-- ✅ See GitHub commits, branches, and pull requests inside Jira tickets
-- ✅ Automatically move Jira tickets when you create a branch or merge a PR
-- ✅ Click from Jira → GitHub (and vice versa) to jump between tools
-- ✅ Track development progress without leaving Jira
+- See GitHub commits, branches, and pull requests inside Jira tickets
+- Automatically move Jira tickets when you create a branch or merge a PR
+- from Jira → GitHub (and vice versa) to jump between tools
+- Track development progress without leaving Jira
 
 ---
 
@@ -49,7 +49,7 @@ Make sure you have:
 4. Click **"Get app"** (it's free)
 5. Click **"Get it now"** to confirm installation
 
-> ✅ Wait for the installation to complete. You'll see a success message.
+> Wait for the installation to complete. You'll see a success message.
 
 ---
 
@@ -77,7 +77,7 @@ Make sure you have:
 2. Select your **GitHub account** or **organization** (e.g., `Jmarco07`)
 3. Choose which repositories to connect:
    - **"All repositories"** — connects all current and future repos
-   - **"Only select repositories"** — pick specific repos (e.g., `customer_api`)
+   - **"Only select repositories"** — pick specific repos (e.g., `github_demo`)
 4. Click **"Install"**
 
 > 💡 Recommendation: Choose **"Only select repositories"** and select the repos you need. You can always add more later.
@@ -122,7 +122,7 @@ git checkout -b CUS-12-add-customer-search
 CUS-12 Add customer search endpoint
 ```
 
-> ✅ As long as the Jira ticket ID (e.g., `CUS-12`) appears in the commit, branch, or PR — Jira will automatically link them.
+> As long as the Jira ticket ID (e.g., `CUS-12`) appears in the commit, branch, or PR — Jira will automatically link them.
 
 ---
 
@@ -181,7 +181,7 @@ Click **"Save"** and **"Turn on rule"**
 | Trigger | "Pull request merged" |
 | Action | "Transition issue to: Done" |
 
-> 💡 These rules save time — your board updates automatically based on your GitHub activity.
+> These rules save time — your board updates automatically based on your GitHub activity.
 
 ---
 
@@ -210,7 +210,7 @@ git push origin CUS-1-test-integration
 
 3. Go back to Jira → open ticket `CUS-1`
 4. Check the **"Development"** panel on the right
-5. You should see your branch and commit listed ✅
+5. You should see your branch and commit listed
 
 ---
 
