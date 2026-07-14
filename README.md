@@ -10,6 +10,7 @@ A beginner-friendly, step-by-step guide to connect your GitHub repository with J
 - Enable automatic traceability between code changes and Jira tickets
 - Reduce manual status updates by automating ticket transitions based on GitHub activity
 - Improve team visibility into development progress directly from the Jira board
+- Automate Jira ticket transitions so that creating a branch moves the ticket to "In Progress" and merging a PR moves it to "Ready for QA/Testing"
 
 ---
 
@@ -24,6 +25,11 @@ A beginner-friendly, step-by-step guide to connect your GitHub repository with J
 | **Real-Time Visibility** | Managers see development progress on the Jira board without asking developers for updates |
 | **Reduced Context Switching** | Navigate between Jira and GitHub with one click — no searching for related items |
 | **Free to Use** | The GitHub for Jira app is provided by Atlassian at no additional cost |
+| **Automated Workflow Transitions** | Jira tickets move automatically — branch creation → "In Progress", PR merged → "Ready for QA/Testing" — no manual dragging needed |
+| **QA Handoff Without Communication Gaps** | QA team instantly knows a feature is ready for testing when the ticket moves automatically after a merge |
+| **No Manual Updates for Developers** | Developers focus on coding — no need to open Jira and drag tickets between columns manually |
+| **PM/Scrum Master Visibility** | Project managers and scrum masters see real-time progress without asking developers for status updates |
+| **QA No Longer Chases Developers** | QA doesn't need to follow up with devs to ask "is this ready?" — the ticket moves automatically and has full event logs (commits, branches, PRs) as proof of progress |
 
 ---
 
@@ -188,6 +194,11 @@ You can make Jira automatically move tickets between columns when you take actio
 | Trigger | "Branch created" |
 | Action | "Transition issue to: In Progress" |
 
+**Process:**
+1. Developer picks up a Jira ticket (e.g., `SCRUM-6`)
+2. Developer creates a branch: `git checkout -b feature/SCRUM-6-description`
+3. Jira automatically moves `SCRUM-6` from "To Do" → **"In Progress"**
+
 Click **"Save"** and **"Turn on rule"**
 
 #### Rule 2: Move ticket to "In Review" when a PR is opened
@@ -197,14 +208,27 @@ Click **"Save"** and **"Turn on rule"**
 | Trigger | "Pull request created" |
 | Action | "Transition issue to: In Review" |
 
-#### Rule 3: Move ticket to "Done" when a PR is merged
+**Process:**
+1. Developer finishes coding and pushes the branch
+2. Developer opens a Pull Request on GitHub with the ticket ID in the title
+3. Jira automatically moves the ticket from "In Progress" → **"In Review"**
+
+#### Rule 3: Move ticket to "Ready for QA/Testing" when a PR is merged
 
 | Field | Value |
 |-------|-------|
 | Trigger | "Pull request merged" |
-| Action | "Transition issue to: Done" |
+| Action | "Transition issue to: Ready for QA/Testing" |
 
-> These rules save time — your board updates automatically based on your GitHub activity.
+**Process:**
+1. Reviewer approves and merges the Pull Request on GitHub
+2. Jira automatically moves the ticket from "In Review" → **"Ready for QA/Testing"**
+3. QA team sees the ticket in their column and begins testing — no manual handoff needed
+
+> 💡 These rules save time — your board updates automatically based on your GitHub activity.
+>
+> **Full automated flow:**
+> `To Do` → (branch created) → `In Progress` → (PR opened) → `In Review` → (PR merged) → `Ready for QA/Testing`
 
 ---
 
