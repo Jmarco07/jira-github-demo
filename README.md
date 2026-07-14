@@ -4,6 +4,29 @@ A beginner-friendly, step-by-step guide to connect your GitHub repository with J
 
 ---
 
+## Objectives
+
+- Establish a seamless connection between GitHub and Jira to unify development and project management workflows
+- Enable automatic traceability between code changes and Jira tickets
+- Reduce manual status updates by automating ticket transitions based on GitHub activity
+- Improve team visibility into development progress directly from the Jira board
+
+---
+
+## Advantages of GitHub + Jira Integration
+
+| Advantage | Description |
+|-----------|-------------|
+| **Full Traceability** | Every commit, branch, and PR is linked to a Jira ticket — creating a clear audit trail |
+| **Time Savings** | No need to manually update Jira tickets; automation handles status transitions |
+| **Better Collaboration** | Developers and project managers share a single source of truth |
+| **Faster Code Reviews** | Reviewers can see the Jira context (requirements, acceptance criteria) directly from the PR |
+| **Real-Time Visibility** | Managers see development progress on the Jira board without asking developers for updates |
+| **Reduced Context Switching** | Navigate between Jira and GitHub with one click — no searching for related items |
+| **Free to Use** | The GitHub for Jira app is provided by Atlassian at no additional cost |
+
+---
+
 ## What This Integration Does
 
 Once connected, you'll be able to:
