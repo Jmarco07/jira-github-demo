@@ -165,13 +165,13 @@ CUS-12 Add customer search endpoint
    - 🟣 **Pull Requests** — any PR with the ticket ID
 4. Click on any item to jump directly to GitHub
 
-![Development panel in Jira](asset/Screenshot%202026-07-15%20at%207.46.57AM.png)
+![Development panel in Jira](asset/development-panel.png)
 
-![Branches under Development](asset/Screenshot%202026-07-15%20at%207.48.09AM.png)
+![Branches under Development](asset/branches-under-development.png)
 
-![Commits under Development](asset/Screenshot%202026-07-15%20at%207.48.26AM.png)
+![Commits under Development](asset/commits-under-development.png)
 
-![Pull Requests under Development](asset/Screenshot%202026-07-15%20at%207.48.41AM.png)
+![Pull Requests under Development](asset/pull-requests-under-development.png)
 
 ---
 
@@ -183,7 +183,7 @@ When you open a Pull Request on GitHub:
 2. Clicking it takes you directly to the Jira ticket
 3. The PR status (open/merged/declined) is reflected in Jira automatically
 
-![GitHub interface of a merged PR](asset/Screenshot%202026-07-15%20at%207.49.05AM.png)
+![GitHub interface of a merged PR](asset/github-merged-pr.png)
 
 ---
 
@@ -197,9 +197,9 @@ You can make Jira automatically move tickets between columns when you take actio
 2. Click **"Automation"** in the left sidebar
 3. Click **"Create rule"**
 
-![Automation tab in Jira](asset/Screenshot%202026-07-15%20at%207.49.20AM.png)
+![Automation tab in Jira](asset/jira-automation-tab.png)
 
-![Automation rule setup](asset/Screenshot%202026-07-15%20at%208.02.21AM.png)
+![Automation rule setup](asset/automation-rule-setup.png)
 
 #### Rule 1: Move ticket to "In Progress" when a branch is created
 
