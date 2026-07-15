@@ -165,6 +165,14 @@ CUS-12 Add customer search endpoint
    - 🟣 **Pull Requests** — any PR with the ticket ID
 4. Click on any item to jump directly to GitHub
 
+![Development panel in Jira](asset/Screenshot%202026-07-15%20at%207.46.57AM.png)
+
+![Branches under Development](asset/Screenshot%202026-07-15%20at%207.48.09AM.png)
+
+![Commits under Development](asset/Screenshot%202026-07-15%20at%207.48.26AM.png)
+
+![Pull Requests under Development](asset/Screenshot%202026-07-15%20at%207.48.41AM.png)
+
 ---
 
 ### Step 9 — View Jira Info in GitHub (Optional)
@@ -174,6 +182,8 @@ When you open a Pull Request on GitHub:
 1. You'll see the Jira ticket linked at the bottom of the PR description
 2. Clicking it takes you directly to the Jira ticket
 3. The PR status (open/merged/declined) is reflected in Jira automatically
+
+![GitHub interface of a merged PR](asset/Screenshot%202026-07-15%20at%207.49.05AM.png)
 
 ---
 
@@ -186,6 +196,10 @@ You can make Jira automatically move tickets between columns when you take actio
 1. In Jira, go to **⚙️ Project Settings** (bottom-left of your project board)
 2. Click **"Automation"** in the left sidebar
 3. Click **"Create rule"**
+
+![Automation tab in Jira](asset/Screenshot%202026-07-15%20at%207.49.20AM.png)
+
+![Automation rule setup](asset/Screenshot%202026-07-15%20at%208.02.21AM.png)
 
 #### Rule 1: Move ticket to "In Progress" when a branch is created
 
